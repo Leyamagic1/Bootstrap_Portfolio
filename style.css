@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+  position: relative;
+}
+.up {
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+  border-radius: 50%;
+  background-color: var(--white);
+  opacity: .8;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.up svg {
+  margin-bottom: 3px;
+  margin-left: 1.5px;
+  width: 30px;
+  height: 30px;
+  z-index: 1200;
+}
+
+.separate-bar {
+  position: absolute;
+  top: 32%;
+  left: 5%;
+  width: 1.5px;
+  height: 62%;
+  background-color: var(--indigo);
+}
+.container-fluid .btn-border, form .btn-border {
+  position: relative;
+  background-color: transparent;
+  color: var(--indigo);
+  padding: .5rem 1rem;
+  border: 2px solid var(--indigo);
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.4s;
+  border-radius: 4px; 
+}
+.container-fluid .btn-border::before, form .btn-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--indigo);
+  z-index: -1;
+  transition: transform 0.4s;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.container-fluid .btn-border:hover::before, form .btn-border:hover::before {
+  transform: scaleX(1);
+}
+.container-fluid .btn-border:hover, form .btn-border:hover {
+  color: var(--light);
+}
+
+
+/* <!-- survol text --> */
+.fluid-line {
+  position: relative;
+}
+.fluid-line::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 1.5px;
+  bottom: 3%;
+  left: 10%;
+  background-color: var(--indigo);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+.fluid-line:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+.fs {
+  font-size: calc(1rem + 0.5vw);
+}
+.fs2 {
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+.list-inline-item .btn-purple {
+  background-color: var(--indigo);
+  color: var(--light);
+}
+.list-inline-item .btn-purple:hover {
+  background-color: #580ece;
+  color: var(--light);
+}
+
+.chevron {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+  .chevron-btn {
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: var(--indigo);
+  }
+  .chevron-btn .indigo {
+    color: var(--indigo);
+  }
+  .chevron-btn .esp {
+    border-bottom: 1px solid var(--indigo);
+  }
+  .chevron .chevron-btn {
+    animation: updown 1.5s ease infinite;
+  }
+  .chevron .chevron-btn:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes updown {
+    0% { transform: translateY(0); }
+    30% { transform: translateY(1rem); }
+    70% { transform: translateY(1rem); }
+    100% { transform: translateY(0); }
+  }
+
+body.dark-mode {
+  background-color: #121212;
+  color: var(--light);
+}
+.navbar-dark-mode {
+  background-color: #333333;
+}
+
+
+
+.list-group-item .purple-border {
+  border: 1px solid var(--indigo);
+  height: 1.5rem;
+  border-radius: .5rem;
+}
+.progress .bg-violet {
+  background-color: var(--indigo) !important;
+  border-radius: .4rem 0 0 .4rem;
+}
+.progress .prog-bar-br {
+  border-radius: .4rem;
+}
+#HTML {
+  width: 100%;  
+}
+#CSS {
+  width: 95%;  
+}
+#JS {
+  width: 55%;  
+}
+#SKETCH{
+  width: 100%;  
+}
+#AI {
+  width: 60%;  
+}
+#FIGMA{
+  width: 40%;  
+}
+#GITHUB{
+  width: 90%;  
+}
+#BOOTSTRAP {
+  width: 80%;  
+}
+#API{
+  width: 40%;  
+}
+.progress {
+  position: relative;
+  overflow: visible !important;
+}
+
+.bold {
+  font-weight: 500;
+}
+  .tooltip-custom {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    width: max-content;
+    max-width: 90%;
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 1.2;
+    transform: translateX(-50%);
+    background-color: #333333;
+    color: var(--light);
+    text-align: center;
+    border-radius: 5px;
+    padding: .7rem;
+    z-index: 300;
+    transition: display .3s ease;
+  }
+  .arrow {
+    position: absolute;
+    bottom: 99%;
+    left: 50%;
+    z-index: 250;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-bottom-color: #333333;
+  }
+  .progress:hover .tooltip-custom {
+    display: block;
+  }
+  /* .bul-fs {
+    font-size: auto;
+  } fonctionne pas*/
+
+/* transition image projet */
+.big {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform-origin: center;
+  position: relative;
+  top: 0;
+}
+.big:hover {
+  transform: scale(1.1);
+  top: 20px;
+}
+.card-body .purple-link {
+  position: relative;
+  color: var(--indigo);
+}
+.card-body .purple-link::after {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--purple);
+}
+.card-body .purple-link:hover {
+  padding-left: 10px;
+  transition: all 0.3s ease;
+  color: var(--purple);
+}
+.card-body .purple-link:hover::after {
+  width: .1rem;
+}
+.card-text {
+  color: #000000;
+}
+
+@media (max-width: 600px) {
+  .btn {
+    font-size: calc(.7rem + 0.5vw) !important;
+  }
+  .chevron-btn .esp {
+    font-size: calc(.8rem + 0.5vw);
+  }
+  .fs {
+    font-size: calc(.8rem + 0.5vw);
+  }
+  .titre {
+    font-size: calc(1.6rem + 0.5vw) !important;
+    font-weight: 400 !important;
+  }
+}

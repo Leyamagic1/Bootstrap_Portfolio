@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js" defer></script>
+    <title>Portfolio BUONOMO Léa - Bootstrap </title>
+</head>
+<body>
+    <a href="#top" aria-label="top">
+        <div class="up shadow">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 806.000000 677.000000" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,677.000000) scale(0.100000,-0.100000)" fill="#6610f2" stroke="none">
+                <path d="M3855 5362 c-159 -56 -321 -207 -1825 -1712 -883 -883 -1191 -1194 -1476 -1495 -215 -226 -248 -266 -268 -326 -21 -65 -21 -199 0 -268 47 -158 204 -293 377 -322 89 -15 142 -6 213 37 157 94 321 250 1484 1410 553 551 1055 1046 1115 1101 61 55 193 175 295 266 l185 165 69 -62 c159 -140 291 -269 1371 -1346 1288 -1284 1450 -1438 1609 -1534 76 -46 128 -53 229 -32 108 24 149 47 240 137 86 86 119 146 138 254 15 85 6 136 -36 210 -87 154 -205 277 -1660 1731 -1494 1493 -1615 1611 -1773 1733 -76 59 -203 83 -287 53z"/>
+                </g>
+            </svg>
+        </div>
+    </a>
+    <!-- <div class="separate-bar"></div> -->
+    <div id="slider" class="container-fluid mt-4">
+        <button type="button" id="btnMode" class="btn btn-border text-uppercase mb-3 float-right">Dark mode</button>
+        <!-- HEADER/NAVIGATION -->
+        <header id="top" class="header-page1 mb-5">
+            <div class="container-fluid">
+                <nav class="nav navbar-expand-lg navbar-light">
+                    <ul class="nav">
+                        <!-- <li class="nav-item"><a class="nav-link text-dark fs fluid-line" href="documents/" title="CV WeLoveDev" target="_blank">CV WLD</a></li> -->
+                        <li class="nav-item"><a class="nav-link text-dark fs fluid-line" href="Documents/CV LMB 2024.pdf" title="PDF Curriculum" target="_blank">Curriculum</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark fs fluid-line" href="documents/Cover letter.pdf" title="PDF Cover letter" target="_blank">Cover Letter</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- INFORMATION -->
+        <article class="article-page1 px-3">
+            <div class="container-sm">
+                <div class="row">
+                    <div>
+                        <h1 class="display-4 titre">Hello !</h1>
+                        <h3 class="fs2 mb-5">Buonomo Léa - Front End developer</h3>
+                        <p class="pb-4 fs">Passionnée, motivée et curieuse de découvrir de nouvelles choses, je veux partager, développer et créer avec des personnes qui me feront progresser. Je souhaite aussi rendre le web plus propre et plus respectueux des utilisateurs.</p>
+                        <ul class="list-unstyled list-inline py-4">
+                            <li class="list-inline-item"><a rel="noopener" class="btn btn-purple mb-2 shadow" href="mailto:leabuonomo@hotmail.fr" title="Mon email" target="_blank">Email</a></li>
+                            <li class="list-inline-item"><a rel="noopener" class="btn btn-purple mb-2 shadow" href="https://www.linkedin.com/in/l%C3%A9a-b-179849208/" title="Mon LinkedIn" target="_blank">LinkedIn</a></li>
+                            <li class="list-inline-item"><a rel="noopener" class="btn btn-purple mb-2 shadow" href="https://codepen.io/Leyamagic1/pens/public" title="Mon Code Pen" target="_blank">CodePen</a></li>
+                            <li class="list-inline-item"><a rel="noopener" class="btn btn-purple mb-2 shadow" href="https://github.com/Leyamagic1" title="Mon GitHub" target="_blank">GitHub</a></li>
+                        </ul>
+                        <div class="chevron text-center mt-4 py-5">
+                            <a class="chevron-btn btn btn-lg" href="#competences"><span class="esp">En savoir plus</span><br><span class="indigo">⮟</span></a>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-6"></div> -->
+                </div>
+            </div>
+        </article>
+        <!-- COMPETENCES -->
+        <section id="competences" class="section1-page2 pt-5">
+            <div class="container pb-5">
+                <h1 class="display-4 pb-4 titre">Compétences</h1>
+                <div class="row">
+                    <div class="col-md-4 pb-3">
+                        <ul class="list-group">
+                            <li class="list-group-item p-4">
+                                <div class="progress purple-border">
+                                    <div id="HTML" class="progress-bar text-left pl-2 bg-violet prog-bar-br bold" role="progressbar" aria-label="html" aria-valuenow="100">HTML</div>
+                                    <div class="tooltip-custom bul-fs">
+                                        Très bonne maîtrise
+                                        <div class="arrow"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item p-4">
+                                <div class="progress purple-border">
+                                    <div id="CSS" class="progress-bar text-left pl-2 bg-violet bold" role="progressbar" aria-label="css" aria-valuenow="95">CSS</div>
+                                    <div class="tooltip-custom bul-fs">
+                                        CSS et Custom properties maîtrisé, SASS et SCSS à pratiquer
+                                        <div class="arrow"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item p-4">
+                                <div class="progress purple-border">
+                                    <div id="JS" class="progress-bar text-left pl-2 bg-violet bold" role="progressbar" aria-label="js" aria-valuenow="55">JS</div>
+                                    <div class="tooltip-custom bul-fs">
+                                        Bon niveau sur des projets Front-end mais besoin de plus de pratique
+                                        <div class="arrow"></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 pb-3">
+                        <ul class="list-group">
+                            <li class="list-group-item p-4">
+                                <div class="progress purple-border">
+                                    <div id="SKETCH" class="progress-bar text-left pl-2 bg-violet prog-bar-br bold" role="progressbar" aria-label="sketch" aria-valuenow="100">Sketchbook Pro</div>
+                                    <div class="tooltip-custom bul-fs">
+                                        Maîtrise totale du logiciel
+                                        <div class="arrow"></div>
+                                    </div>                                
+                                </div>
+                            </li>
+                            <li class="list-group-item p-4">
+                                <div class="progress purple-border">
+                                    <div id="AI" class="progress-bar text-left pl-2 bg-violet bold" role="progressbar" aria-label="ai" aria-valuenow="60">Illustrator</div>
+                                    <div class="tooltip-custom bul-fs">
+                                        Bonne maîtrise mais pas assez de pratique
+                                        <div class="arrow"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item p-4">
+                                <div class="progress purple-border">
+                                    <div id="FIGMA" class="progress-bar text-left pl-2 bg-violet bold" role="progressbar" aria-label="figma" aria-valuenow="40">Figma</div>
+                                    <div class="tooltip-custom bul-fs">
+                                        Compréhension globale mais très peu utilisé
+                                        <div class="arrow"></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 pb-3">
+                        <ul class="list-group">
+                            <li class="list-group-item p-4">
+                                <div class="progress purple-border">
+                                    <div id="GITHUB" class="progress-bar text-left pl-2 bg-violet bold" role="progressbar" aria-label="github" aria-valuenow="50">GitHub</div>
+                                    <div class="tooltip-custom bul-fs">
+                                        Souvent utilisé mais encore des points à découvrir
+                                        <div class="arrow"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item p-4">
+                                <div class="progress purple-border">
+                                    <div id="BOOTSTRAP" class="progress-bar text-left pl-2 bg-violet bold" role="progressbar" aria-label="bootstrap" aria-valuenow="50">Bootstrap</div>
+                                    <div class="tooltip-custom bul-fs">
+                                        Maîtrise du frameworks mais un apprentissage intensif des classes est nécessaire
+                                        <div class="arrow"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item p-4">
+                                <div class="progress purple-border">
+                                    <div id="API" class="progress-bar text-left pl-2 bg-violet bold" role="progressbar" aria-label="api" aria-valuenow="40">API REST</div>
+                                    <div class="tooltip-custom bul-fs">
+                                        Manque de pratique
+                                        <div class="arrow"></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PROJETS -->
+        <section class="section2-page2">
+            <div class="container">
+                <h1 class="display-4 pb-4 titre">Projets</h1>
+                <div class="row">
+                    <div class="col-md-6 pb-5">
+                        <div class="card h-100 shadow">
+                            <img class="card-img-top big" src="img/Tools site.png" alt="projet 1">
+                            <div class="card-body">
+                                <a rel="noopener" href="https://github.com/Leyamagic1/Outils-Frontend"  class="card-link purple-link" data-toggle="tooltip" data-placement="right" title="Sur GitHub" target="_blank">Voir le code source</a>
+                                <p class="card-text"><div class="text-dark">Bibliothèque d'outils pour le développement front-end : </div><cite class="text-dark">HTML/CSS/JS</cite></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 pb-5">
+                        <div class="card h-100 shadow">
+                            <img class="card-img-top big" src="img/Fruity design.png" alt="projet 2">
+                            <div class="card-body">
+                                <a rel="noopener" href="https://github.com/Leyamagic1/Fruity" class="card-link purple-link" data-toggle="tooltip" data-placement="right" title="Sur GitHub" target="_blank">Voir le code source</a>
+                                <p class="card-text"><div class="text-dark">Page en slider simple avec un design inspiré de Dribble : </div><cite class="text-dark">HTML/CSS/JS</cite></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 pb-5">
+                        <div class="card h-100 shadow">
+                            <img class="card-img-top big" src="img/Mes transitions-interactions favorites.png" alt="projet 3">
+                            <div class="card-body">
+                                <a rel="noopener" href="https://codepen.io/Leyamagic1/pen/RwzMjQQ" class="card-link purple-link" data-toggle="tooltip" data-placement="right" title="Sur Codepen" target="_blank">Voir le code source</a>
+                                <p class="card-text"><div class="text-dark">Mes visuels de transitions préférés : </div><cite class="text-dark">HTML/CSS/JS</cite></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 pb-5">
+                        <div class="card h-100 shadow">
+                            <img class="card-img-top big" src="img/Site de santé publique.png" alt="projet 4">
+                            <div class="card-body">
+                                <a rel="noopener" href="https://github.com/Leyamagic1/App-Sante" class="card-link purple-link" data-toggle="tooltip" data-placement="right" title="Sur GitHub" target="_blank">Voir le code source</a>
+                                <p class="card-text"><div class="text-dark">Idées de site pour la santé publique : </div><cite class="text-dark">HTML/CSS/JS</cite></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTACT
+        <section class="section1-page3 pt-5">
+            <div class="container">
+                <h2 class="display-4 pb-3 titre">Contact</h2>
+                <form>
+                    <div class="form-group mb-4">
+                        <label class="d-none" for="mail">Email</label>
+                        <input type="email" class="form-control" id="mail" placeholder="Email">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label class="d-none" for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your text" style="resize: none;"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-border">Submit</button>
+                </form>
+            </div>
+        </section> -->
+        <!-- FOOTER -->
+        <footer class="footer-page3 mt-5">
+            <div class="container">
+                <p class="text-center"><script>document.write("&copy; Buonomo Léa tous droits réservés. " + new Date().getFullYear());</script></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
