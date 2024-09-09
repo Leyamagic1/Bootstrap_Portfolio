@@ -111,10 +111,10 @@ body{
   color: var(--light);
 }
 ul .btn-email {
-  padding: .375rem 1.4rem;
+  padding: .375rem 1.43rem;
 }
 ul .btn-ldin {
-  padding: .375rem .77rem;
+  padding: .375rem .76rem;
 }
 ul .btn-git {
   padding: .375rem 1rem;
