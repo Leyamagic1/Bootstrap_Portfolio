@@ -110,6 +110,12 @@ body{
   background-color: #580ece;
   color: var(--light);
 }
+ul .btn-email {
+  padding: .375rem 1.4rem;
+}
+ul .btn-git {
+  padding: .375rem 1rem;
+}
 
 .chevron {
   width: 100%;
@@ -279,7 +285,7 @@ body.dark-mode {
     font-size: calc(.7rem + 0.5vw) !important;
   }
   .chevron-btn .esp {
-    font-size: calc(.8rem + 0.5vw);
+    font-size: calc(.9rem + 0.5vw);
   }
   .fs {
     font-size: calc(.8rem + 0.5vw);
@@ -288,4 +294,8 @@ body.dark-mode {
     font-size: calc(1.6rem + 0.5vw) !important;
     font-weight: 400 !important;
   }
+  .first-section ul {
+    padding: 0 4rem
+  }
+
 }
