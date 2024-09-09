@@ -113,6 +113,9 @@ body{
 ul .btn-email {
   padding: .375rem 1.42rem;
 }
+ul .btn-ldin {
+  padding: .375rem .7rem;
+}
 ul .btn-git {
   padding: .375rem 1rem;
 }
