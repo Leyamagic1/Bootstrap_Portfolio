@@ -111,7 +111,7 @@ body{
   color: var(--light);
 }
 ul .btn-email {
-  padding: .375rem 1.4rem;
+  padding: .375rem 1.42rem;
 }
 ul .btn-git {
   padding: .375rem 1rem;
@@ -295,7 +295,7 @@ body.dark-mode {
     font-weight: 400 !important;
   }
   .first-section ul {
-    padding: 0 4rem
+    padding: 0 4rem;
   }
 
 }
