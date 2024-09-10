@@ -95,12 +95,17 @@ body{
 }
 
 
-.fs {
-  font-size: calc(1rem + 0.5vw);
-}
 .fs2 {
   font-weight: 300;
   font-size: 1.3rem;
+  margin-bottom: 3rem;
+}
+.fs {
+  font-size: calc(1rem + 0.5vw);
+  padding: 1.5rem 0;
+}
+.list-inline {
+  padding-bottom: 1.5rem;
 }
 .list-inline-item .btn-purple {
   background-color: var(--indigo);
@@ -125,6 +130,7 @@ ul .btn-git {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 1.5rem;
 }
   .chevron-btn {
     font-weight: bold;
@@ -287,11 +293,18 @@ body.dark-mode {
   .btn {
     font-size: calc(.7rem + 0.5vw) !important;
   }
+  .chevron {
+    margin-top: 1.1rem;
+  }
   .chevron-btn .esp {
     font-size: calc(.9rem + 0.5vw);
   }
+  .fs2 {
+    margin-bottom: 1.5rem;
+  }
   .fs {
     font-size: calc(.8rem + 0.5vw);
+    padding-bottom: 1.2rem;
   }
   .titre {
     font-size: calc(1.6rem + 0.5vw) !important;
@@ -300,5 +313,10 @@ body.dark-mode {
   .first-section ul {
     padding: 0 4rem;
   }
-
+  .list-inline {
+    padding-bottom: 1rem;
+  }
+  .list-inline-item {
+    margin-bottom: .5rem;
+  }
 }
